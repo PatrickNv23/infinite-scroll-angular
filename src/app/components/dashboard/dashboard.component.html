@@ -1,0 +1,15 @@
+<section infiniteScroll [infiniteScrollDistance]="2" [infiniteScrollUpDistance]="2" [infiniteScrollThrottle]="50"
+  (scrolled)="onScroll()" (scrolledUp)="onScrollUp()">
+
+  <ng-container *ngIf="characters.length > 0 else message">
+    <div class="container_item" *ngFor="let character of characters; trackby: trackByCharacterId">
+      <p>Name: {{character.name}}</p>
+      <p>Status: <span>{{character.status}}</span></p>
+    </div>
+  </ng-container>
+
+  <ng-template #message>
+    <p>La lista está vacía</p>
+  </ng-template>
+
+</section>

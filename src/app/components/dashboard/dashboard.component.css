@@ -1,0 +1,15 @@
+.container_item {
+  border: 2px solid black;
+  margin: 4px;
+  width: 50%;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.container_item:hover {
+  background-color: #ff9;
+}
